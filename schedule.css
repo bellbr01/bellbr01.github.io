@@ -1,13 +1,16 @@
 table {
   border:solid;
   border-color:black;
+  text-align:center;
 }
 th {
   border:solid;
   border-color:black;
+  text-align:center;
 }
 td {
   border:solid
   border-color:black;
+  text-align:center;
 }
 
