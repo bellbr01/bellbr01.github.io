@@ -1,10 +1,18 @@
+.hr{background-color:#33ccff;
+}
+.compsci{background-color:#00ff00;
+}
+.acc{background-color:#ff9900;
+}
+.chem{background-color:#ff99ff;
+}
 table {
   border:solid;
   border-color:black;
   text-align:center;
 }
 th {
-  border:solid;
+  border:dotted;
   border-color:black;
   text-align:center;
   font-family:fantasy;
