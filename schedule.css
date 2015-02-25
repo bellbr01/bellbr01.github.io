@@ -23,6 +23,7 @@ table {
   border:solid;
   border-color:black;
   text-align:center;
+  border-width:3px;
 }
 th {
   border:dotted;
