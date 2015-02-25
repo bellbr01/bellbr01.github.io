@@ -20,7 +20,7 @@ color:white;
 .chem{background-color:#ff99ff;
 }
 table {
-  border:solid;
+  border:groove;
   border-color:black;
   text-align:center;
   border-width:3px;
