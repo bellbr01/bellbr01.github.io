@@ -6,14 +6,14 @@
 <label for="box"> Temperature in Degrees Celsius </label>
 <input type="text" id="box">
 <button onclick="hello();">Click To Convert</button>
-<h2>id="output"></h2>
+<h1>id="output"></h1>
 
 <script>
 hello=function() {
   box=document.querySelector("#box");
-  temperature= box.value;
-  theh2= document.querySelector("#output");
-  theh2.innerHTML = temperature*1.8+32+ "Degrees in Fahrenheit"
+  temperature=box.value;
+  theh1= document.querySelector("#output");
+  theh1.innerHTML = temperature*1.8+32 + "Degrees in Fahrenheit"
 }
 
 </script>
