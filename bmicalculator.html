@@ -3,12 +3,14 @@
 <title>BMI Calculator</title>
 </head>
 <body>
-<label for="boxone">Height (in)</label>
-<input type="text" id="boxone">
-<label for="boxtwo">Weight (lbs)</label>
-<input type="text" id="boxtwo">
-<button onclick="hello();">Show me my BMI</button>
-<h1 id="output"></h1>
+  <label for="sliderone">Height (in)</label>
+    <input type="range" min=0 max=100 id="sliderone">
+  <label for="slidertwo">Weight (lbs)</label>
+    <input type="range" min=0 max=500 id="slidertwo">
+      <button onclick="hello();">Show me my BMI</button>
+        <h1 id="height"></h1>
+        <h1 id="weight"></h1>
+        <h1 id="bmi"></h1>
 <script>
 hello=function() {
 boxone = document.querySelector("#boxone");
