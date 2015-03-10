@@ -13,17 +13,17 @@
 <script>
 hello=function() {
 sliderone = document.querySelector("#sliderone");
-height = sliderone.value;
+heightslider = sliderone.value;
 slidertwo = document.querySelector("#slidertwo")
-weight = slidertwo.value;
+weightslider=slidertwo.value;
 
 
 tall=document.querySelector("#height")
-tall.innerHTML="Height: " + height;
+tall.innerHTML="Height: " + heightslider;
 heavy=document.querySelector("#weight")
-heavy.innerHTML="Weight: " + weight;
-bmi = document.querySelector("#bmi");
-bmi.innerHTML = "BMI is " + (weight*703)/(height*height);
+heavy.innerHTML="Weight: " + weightslider;
+bmi=document.querySelector("#bmi");
+bmi.innerHTML = "BMI: " + (weight*703)/(height*height);
 }
 </script>
 </body>
