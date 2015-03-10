@@ -16,7 +16,12 @@ sliderone = document.querySelector("#sliderone");
 height = sliderone.value;
 slidertwo = document.querySelector("#slidertwo")
 weight = slidertwo.value;
-height=document.querySelector("#")
+
+
+height=document.querySelector("#height")
+height.innerHTML="Height: " + height;
+weight=document.querySelector("#weight")
+weight.innerHTML="Weight: " + weight;
 bmi = document.querySelector("#bmi");
 bmi.innerHTML = "BMI is " + (weight*703)/(height*height);
 }
