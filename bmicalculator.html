@@ -10,6 +10,7 @@
         <h1 id="height">Height: 0</h1>
         <h1 id="weight">Weight: 0</h1>
         <h1 id="bmi">BMI: </h1>
+        <h1  id="message"> </h1>
 <script>
 hello=function() {
 sliderone = document.querySelector("#sliderone");
@@ -24,6 +25,21 @@ heavy=document.querySelector("#weight")
 heavy.innerHTML="Weight: " + weightslider;
 bmi=document.querySelector("#bmi");
 bmi.innerHTML = "BMI: " + (weightslider*703)/(heightslider*heightslider);
+}
+ if (bmi>19) {
+message=document.querySelector("#message");
+messsage.innerHTML="TOO LOW";
+document.body.backgroundColor="green";
+}
+if (bmi<24) {
+message=document.querySelector("message");
+message.innerHTML="TOO HIGH";
+document.body.backgroundColor="red";
+ }
+ if (bmi>19 && tempf<=24) {
+message=document.querySelector("message");
+message.innerHTML="GOOD";
+ document.body.backgroundColor="skyblue";
 }
 </script>
 </body>
