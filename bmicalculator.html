@@ -29,17 +29,17 @@ bmi.innerHTML = "BMI: " + (weightslider*703)/(heightslider*heightslider);
  if (bmi>19) {
 message=document.querySelector("#message");
 messsage.innerHTML="TOO LOW";
-document.body.backgroundColor="green";
+document.body.style.backgroundColor="green";
 }
 if (bmi<24) {
-message=document.querySelector("message");
+message=document.querySelector("#message");
 message.innerHTML="TOO HIGH";
-document.body.backgroundColor="red";
+document.body.style.backgroundColor="red";
  }
  if (bmi>19 && tempf<=24) {
-message=document.querySelector("message");
+message=document.querySelector("#message");
 message.innerHTML="GOOD";
- document.body.backgroundColor="skyblue";
+ document.body.style.backgroundColor="skyblue";
 }
 </script>
 </body>
