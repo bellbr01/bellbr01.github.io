@@ -15,19 +15,18 @@
 hello=function() {
 sliderone = document.querySelector("#sliderone");
 heightslider = sliderone.value;
-slidertwo = document.querySelector("#slidertwo")
+slidertwo = document.querySelector("#slidertwo");
 weightslider=slidertwo.value;
 
 
-tall=document.querySelector("#heightoutput")
+tall=document.querySelector("#heightoutput");
 tall.innerHTML="Height: " + heightslider;
-heavy=document.querySelector("#weightoutput")
+heavy=document.querySelector("#weightoutput");
 heavy.innerHTML="Weight: " + weightslider;
 theh1=document.querySelector("#bmi");
-bmi=(weightslider*703)/(heightslider*heightslider)
+bmi=(weightslider*703)/(heightslider*heightslider);
 theh1.innerHTML = "BMI: " + bmi;
 
-}
  if (bmi>19) {
 message=document.querySelector("#message");
 message.innerHTML="TOO LOW";
@@ -42,6 +41,7 @@ document.body.style.backgroundColor="red";
 message=document.querySelector("#message");
 message.innerHTML="GOOD";
 document.body.style.backgroundColor="skyblue";
+}
 }
 </script>
 </body>
