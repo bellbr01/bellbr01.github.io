@@ -7,8 +7,8 @@
     <input type="range" min=0 max=100 id="sliderone" onmousemove="hello();" value=0>
   <label for="slidertwo">Weight (lbs)</label>
     <input type="range" min=0 max=500 id="slidertwo" onmousemove="hello();" value=0>
-        <h1 id="height">Height: 0</h1>
-        <h1 id="weight">Weight: 0</h1>
+        <h1 id="heightoutput">Height: 0</h1>
+        <h1 id="weightoutput">Weight: 0</h1>
         <h1 id="bmi">BMI: </h1>
         <h1 id="message"> </h1>
 <script>
@@ -19,18 +19,18 @@ slidertwo = document.querySelector("#slidertwo")
 weightslider=slidertwo.value;
 
 
-tall=document.querySelector("#height")
+tall=document.querySelector("#heightoutput")
 tall.innerHTML="Height: " + heightslider;
-heavy=document.querySelector("#weight")
+heavy=document.querySelector("#weightoutput")
 heavy.innerHTML="Weight: " + weightslider;
-bmi=document.querySelector("#bmi");
+theh1=document.querySelector("#bmi");
 bmi=(weightslider*703)/(heightslider*heightslider)
-bmi.innerHTML = "BMI: " + bmi;
+theh1.innerHTML = "BMI: " + bmi;
 
 }
  if (bmi>19) {
 message=document.querySelector("#message");
-messsage.innerHTML="TOO LOW";
+message.innerHTML="TOO LOW";
 document.body.style.backgroundColor="green";
 }
 if (bmi<24) {
@@ -41,7 +41,7 @@ document.body.style.backgroundColor="red";
  if (bmi>19 && tempf<=24) {
 message=document.querySelector("#message");
 message.innerHTML="GOOD";
- document.body.style.backgroundColor="skyblue";
+document.body.style.backgroundColor="skyblue";
 }
 </script>
 </body>
