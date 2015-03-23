@@ -30,11 +30,17 @@
   </table>
 <script>
 hello=function() {
-firstname=document.querySelector("#bofn").value;
-lastname=document.querySelector("#boxln").value;
-emailaddress=document.querySelector("#boxe").value;
-phonenumber=document.querySelector("#boxpn").value;
+boxfn=document.querySelector("#boxfn").value;
+boxln=document.querySelector("#boxln").value;
+boxe=document.querySelector("#boxe").value;
+boxpn=document.querySelector("#boxpn").value;
 
-
+t=document.querySelector("addresstable")
+trow=document.createElement("tr")
+td=document.createElement("td")
+contents=document.createTextNode(boxfn)
+td.appendChild(contents)
+trow.appendChild(td)
+t.appendChild(trow)
 
 
