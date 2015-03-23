@@ -27,12 +27,12 @@ theh1=document.querySelector("#bmi");
 bmi=(weightslider*703)/(heightslider*heightslider);
 theh1.innerHTML = "BMI: " + bmi;
 
- if (bmi>19) {
+ if (bmi<19) {
 message=document.querySelector("#message");
 message.innerHTML="TOO LOW";
 document.body.style.backgroundColor="green";
 }
-if (bmi<24) {
+if (bmi>24) {
 message=document.querySelector("#message");
 message.innerHTML="TOO HIGH";
 document.body.style.backgroundColor="red";
