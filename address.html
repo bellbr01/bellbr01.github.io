@@ -37,10 +37,16 @@ boxpn=document.querySelector("#boxpn").value;
 
 t=document.querySelector("addresstable")
 trow=document.createElement("tr")
+
 td=document.createElement("td")
 contents=document.createTextNode(boxfn)
 td.appendChild(contents)
 trow.appendChild(td)
-t.appendChild(trow)
+
+tda=document.createElement("td")
+contentsa=document.createTextNode(boxln)
+tda.appendChild(contentsa)
+trow.appendChild(tda)
+
 
 
