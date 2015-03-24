@@ -16,26 +16,28 @@
     
 </head>    
 <body>
-    <button onclick="increment()">Click Me</button>
+<h1>To-Do List</h1>
+    <button onclick="increment()">Add to List</button>
     <ul id="out">
     </ul>
+    <label>Item</label>
+    <input type="text" id="todoitem">
     
+    <button onclick="clearbutton()">Clear</button>
     <script>
         var count = 0;
         
         increment = function() {
-            count = count + 1;
             output = document.querySelector("#out");
+            todobox=document.querySelector("#out");
             newli = document.createElement("li");
-            
             cb = document.createElement("input");
             cb.type="checkbox";
             newli.appendChild(cb);
             te = document.createTextNode(count);
             newli.appendChild(te);
-            
+            out.appendChild(newli);
             cb.onclick=select;
-            
             out.appendChild(newli);
         }
         
