@@ -7,15 +7,30 @@
         font-size: 24px;
     }
         
-    .makered {
-        color: red;
+    .checkoff{
         text-decoration: line-through;
+    }
+    .Red{
+        color:red;
+    }
+    .Blue{
+        color:blue;
+    }
+    .Green{
+        color:green;
     }
         
     </style>
     
 </head>    
 <body>
+
+<select id="colorchooser">
+    <option>Red</option>
+    <option>Blue</option>
+    <option>Green</option>
+</select>
+
 <h1>To-Do List</h1>
 <label>Item</label>
     <input type="text" id="todoitem">
@@ -39,13 +54,20 @@
             out.appendChild(newli);
             cb.onclick=select;
             
+            colorpicker=document.querySelector("#colorchooser");
+            theindex=colorpicker.selectedIndex;
+            theoption=colorpicker.options[theindex];
+            thecolor=theoption.value;
+            newli.classList.add(thecolor);
+            
+            
         }
         
         select = function() {
             if (this.checked)
-               this.parentNode.classList.add("makered");
+               this.parentNode.classList.add("checkoff");
             else
-               this.parentNode.classList.remove("makered");
+               this.parentNode.classList.remove("checkoff");
         }
         clearbutton=function () {
         list=document.querySelector("#out");
